@@ -1,0 +1,45 @@
+.maindivStatic {
+  display: flex;
+  flex-direction: column;
+}
+
+.topDiv {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px dotted lightgray;
+  padding-bottom: 10px;
+}
+.topInnerDiv {
+  display: flex;
+
+  justify-content: start;
+  margin-left: 5px;
+}
+
+.bottomDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottomInner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.bottomInner span {
+  margin-left: 10px;
+}
+
+.bottomDiv button {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.bottenSecDiv span {
+  margin-left: 5px;
+}

@@ -1,0 +1,75 @@
+.homeMainDiv {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+
+@media (max-width: 599px) {
+  .homeMainDiv {
+    grid-template-columns: 1fr;
+  }
+}
+
+.seondDivHome {
+  margin: 5px 0px 5px 15px;
+  border-radius: 10px;
+  min-height: 600px;
+}
+.seondDivMobile {
+  font-size: 16px;
+}
+.seondDivHome hr {
+  margin: 0;
+}
+.seondDivMobile hr {
+  display: none;
+}
+
+.myAssessm {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+}
+
+.InnerMyassessm {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.InnerMyassessm div {
+  margin-right: 30px;
+}
+.cardSty {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+/* forCard */
+.card-container {
+  margin: auto;
+}
+.card {
+  border-style: dashed !important ;
+  text-align: center !important;
+  background-color: #f6f8fa;
+  width: 340px;
+  height: 180px;
+  font-size: 12px;
+}
+.title {
+  margin-top: 10px;
+}
+
+.btn {
+  border-radius: 50% !important;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  color: rgb(32,  40,  156);
+  background-color: white;
+
+  color: blue;
+}

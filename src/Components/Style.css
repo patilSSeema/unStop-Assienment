@@ -1,0 +1,84 @@
+.assessHead {
+  margin: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.mainDiv {
+  /* border: 1px solid lightgray; */
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  margin: 12px 12px;
+}
+.FirstDiv {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+}
+.FirstDiv div {
+  border: 0.5px solid lightgray;
+  height: 140px;
+  padding: 5px;
+}
+.Pheadings {
+  font-weight: 600;
+  font-size: 1rem;
+  padding-top: 10px;
+}
+.innerDiv b {
+  font-size: 1.3rem;
+}
+.outerDiv span {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+.innerP {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.SecDiv {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+.SecDiv div {
+  border: 0.5px solid lightgray;
+  padding: 5px;
+  height: 140px;
+}
+
+/* .SecDiv div  {
+  font-weight: 800;
+} */
+.innerDiv {
+  display: flex;
+  justify-content: flex-start;
+}
+.innerDiv > span {
+  margin-left: 20px;
+}
+.innerDiv > span span {
+  color: green;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* forIcons */
+.icon {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.slide-container {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.visible {
+  height: 350px; /* Set the desired height */
+}
+
+.hidden {
+  height: 0;
+}
