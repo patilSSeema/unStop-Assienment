@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Style.css";
 import { PiEqualsFill } from "react-icons/pi";
 import { IoLink } from "react-icons/io5";
@@ -6,6 +6,27 @@ import { MdOutlinePeopleOutline } from "react-icons/md";
 import { BsGlobe2 } from "react-icons/bs";
 
 const MyAssessment = () => {
+  const [iconSize, setIconSize] = useState(35);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Adjust the size based on the window width
+      if (window.innerWidth <= 767) {
+        setIconSize(20);
+      } else if (window.innerWidth <= 991) {
+        setIconSize(25);
+      } else {
+        setIconSize(35);
+      }
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <p className="assessHead">Assessment Overview</p>
@@ -16,7 +37,7 @@ const MyAssessment = () => {
             <p className="outerDiv">
               <span>
                 <PiEqualsFill
-                  size={35}
+                  size={iconSize}
                   color="#6548EE"
                   className="icon"
                   style={{ backgroundColor: "#EBE8FD" }}
@@ -32,7 +53,7 @@ const MyAssessment = () => {
             <p className="innerDiv">
               <span>
                 <MdOutlinePeopleOutline
-                  size={35}
+                  size={iconSize}
                   color="#6548EE"
                   className="icon"
                   style={{ backgroundColor: "#EBE8FD" }}
@@ -59,7 +80,7 @@ const MyAssessment = () => {
             <p className="innerDiv">
               <span>
                 <BsGlobe2
-                  size={35}
+                  size={iconSize}
                   color="#EE6A97"
                   className="icon"
                   style={{ backgroundColor: "#FCE8EF" }}
@@ -91,7 +112,7 @@ const MyAssessment = () => {
               <span>
                 <IoLink
                   color="blue"
-                  size={35}
+                  size={iconSize}
                   className="icon"
                   style={{ backgroundColor: "#E5F1FC" }}
                 />

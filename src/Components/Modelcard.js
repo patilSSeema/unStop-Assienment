@@ -4,6 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import "./Modelcard.css";
+import { LuPlus } from "react-icons/lu";
 
 function Modelcard() {
   const [show, setShow] = useState(false);
@@ -50,47 +51,46 @@ function Modelcard() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}></Button>
-      <Modal show={show} onHide={handleClose}>
+      <Button variant="light" onClick={handleShow} classname="btn">
+        <LuPlus size={20} color="blue" />
+      </Button>
+      <Modal show={show} onHide={handleClose} dialogClassName="custom-modal">
         <Modal.Header closeButton>
-          <Modal.Title>Create new assessment</Modal.Title>
+          <h6>Create new assessment</h6>
         </Modal.Header>
         <Modal.Body>
-          <div className="container">
+          <div className="mainDivModel">
             <label className="label-name">Name of assessment</label>
             <p>
               <input
                 type="text"
                 value={assessmentName}
                 onChange={(e) => setAssessmentName(e.target.value)}
-                placeholder="Type Here"
+                placeholder="Type Here "
+                className="inputSty"
               />
             </p>
-
             <label className="label-name">Purpose of the test is</label>
-
             <p>
               <select
                 value={purpose}
                 onChange={(e) => setPurpose(e.target.value)}
                 id="select-test"
+                className="inputSty"
               >
                 <option value="">Select</option>
                 <option value="">Practice</option>
-                {/* Add other options */}
               </select>
             </p>
-
             <label className="label-name">Description</label>
-
             <p>
               <select
                 value={description}
+                className="inputSty"
                 onChange={(e) => setDescription(e.target.value)}
               >
                 <option value="Select">Select</option>
                 <option value="Select">Want to practice</option>
-                {/* Add other options */}
               </select>
             </p>
             <div className="chip-div">
@@ -105,21 +105,14 @@ function Modelcard() {
                   label="No of Quetion"
                   onDelete={handleDelete}
                 />
-                {/* <br/>
-              <Chip className="inner-chip" label="Web Development" onDelete={handleDelete} /> */}
-                {/* <Chip className="inner-chip"
-                label="Reactjs"
-                variant="outlined"
-                onDelete={handleDelete}
-              /> */}
               </Stack>
             </div>
             <p>
               <input
-                className="skill-input"
+                className="skill-input inputSty"
                 type="text"
                 placeholder="Type here"
-              ></input>
+              />
             </p>
             <label className="label-name">Duration of assessment</label>
             <p>
@@ -128,6 +121,7 @@ function Modelcard() {
                 value={timeInput}
                 onChange={handleTimeInputChange}
                 placeholder="hh:mm:ss"
+                className="inputSty"
               />
             </p>
             <button
@@ -139,11 +133,6 @@ function Modelcard() {
             </button>
           </div>
         </Modal.Body>
-        {/* <Modal.Footer className="footer">
-          <button type="save-button"  onClick={handleSaveChanges}>
-            Save
-          </button>
-        </Modal.Footer> */}
       </Modal>
     </>
   );

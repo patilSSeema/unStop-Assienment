@@ -7,34 +7,35 @@ import { GrFormAttachment } from "react-icons/gr";
 
 const StaticCard = () => {
   return (
-    <Card className="card-container" style={{ width: "22rem" }}>
+    <Card className="card-container">
       <Card.Body className="card1">
-        <div className="maindivStatic">
-          <div className="topDiv">
-            <div className="topInnerDiv">
-              <div>
-                <IoBriefcaseOutline
-                  size={40}
-                  color="#6548EE"
-                  className="icon"
-                  style={{ backgroundColor: "#EBE8FD" }}
-                />
-              </div>
-              <div>
-                <span className="inner-span">Math Assessment</span>
-                <p>
-                  <span>Job</span>
-                  <span>
-                    <MdOutlineWatchLater />
-                  </span>
-                  <span> 20 Apr 2023</span>
-                </p>
-              </div>
+        <div className="mainStaticcard">
+          <div className="firstDiv">
+            <div>
+              <IoBriefcaseOutline
+                size={40}
+                color="#6548EE"
+                className="icon"
+                style={{ backgroundColor: "#EBE8FD" }}
+              />
             </div>
             <div>
               <HiOutlineDotsVertical size={20} />
             </div>
           </div>
+          <div className="secDiv">
+            <div>
+              <span className="inner-span">Math Assessment</span>
+              <p>
+                <span className="secDivSpan">Job</span>
+                <span>
+                  <MdOutlineWatchLater size={15} />
+                </span>
+                <span style={{ color: "gray" }}> 20 Apr 2023</span>
+              </p>
+            </div>
+          </div>
+          <p className="outline"></p>
           <div className="bottomDiv">
             <div className="bottomInner">
               <div>

@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px dotted lightgray;
+
   padding-bottom: 10px;
 }
 .topInnerDiv {
@@ -42,4 +42,39 @@
 
 .bottenSecDiv span {
   margin-left: 5px;
+}
+.inner-span {
+  font-size: 0.9rem;
+  padding: 2px;
+  font-weight: 600;
+}
+.mainStaticcard {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.firstDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.secDiv {
+  display: flex;
+  justify-content: start;
+  padding: 0;
+}
+.secDivSpan {
+  font-size: 0.8rem;
+  padding-right: 10px;
+  margin: 10px;
+  font-weight: 600;
+  border-right: 1px solid gray;
+}
+.outline {
+  width: 300px;
+  border-bottom: 2px dotted lightgray;
+}
+
+.bottomInner span {
+  font-size: 0.7rem;
+  font-weight: 600;
 }

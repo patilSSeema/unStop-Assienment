@@ -8,6 +8,7 @@ body {
 }
 body {
   background-color: lightgray;
+  
 }
 * {
   box-sizing: border-box;
@@ -16,30 +17,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-.sideBarSty {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  border-bottom: 1px dashed gray;
-  padding: 0;
-}
-
-.sideBarSty div {
-  text-align: center;
-  margin: 20px 5px;
-}
-
-.sideBarSty div p {
-  text-align: center;
-  margin: 0;
-  font-size: 0.9rem;
-}
-.sideBarSty div span {
-  text-align: center;
-  margin: 0 5px;
-  font-size: 0.9rem;
 }
 
 

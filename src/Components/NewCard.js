@@ -1,19 +1,15 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
-import { LuPlus } from "react-icons/lu";
+
 import "./Home.css";
 import Modelcard from "./Modelcard";
 
 const NewCard = () => {
   return (
     <div>
-      <Card className="card-container" style={{ width: "18rem" }}>
+      <Card className="card-container">
         <Card.Body className="card">
-          <Modelcard>
-            <button className="btn">
-              <LuPlus size={20} />
-            </button>
-          </Modelcard>
+          <Modelcard></Modelcard>
           <Card.Subtitle className="mb-2 text-muted title">
             New Assessment
           </Card.Subtitle>
@@ -28,3 +24,7 @@ const NewCard = () => {
 };
 
 export default NewCard;
+
+//  <Card className="card-container" style={{ width: "20rem" }}>
+
+//  </Card>;

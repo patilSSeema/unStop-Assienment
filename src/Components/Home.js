@@ -44,7 +44,7 @@ const Home = () => {
             <RiFilterFill size={20} />
           </div>
           <div>
-            <button onClick={toggleVisibility}>
+            <button onClick={toggleVisibility} className="BarChartBtn">
               <MdOutlineBarChart size={20} />
             </button>
           </div>
@@ -101,9 +101,9 @@ const Home = () => {
             </div>
             {isMobile ? <AssessmentOverview /> : ""}
             <div>
-              <h4>My Assessments</h4>
+              <h5 className="MyAssessHead">My Assessments</h5>
             </div>
-            <div className="cardSty">
+            <div className="cardStyle">
               <div>
                 <NewCard />
               </div>
@@ -116,7 +116,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div></div>
       </div>
     </>
   );
